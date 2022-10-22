@@ -15,7 +15,7 @@
         <h1 class="text-white text-uppercase">Calcola il prezzo del tuo biglietto</h1>
         <div class="container radius white-bg">
             <div class="forms">
-                <input type="text" id="name" placeholder="Inserisci il tuo nome">
+                <input type="text" id="name" placeholder="Inserisci nome e cognome">
                 <input type="number" id="distance" placeholder="Distanza (km)">
                 <input list="fascia-eta" id="age" placeholder="fascia età">
                 <datalist id="fascia-eta">
@@ -25,12 +25,47 @@
                 </datalist>
             </div>
             <div class="buttons">
-                <button class="btn btn-secondary confirm">Genera</button>
-                <button class="btn btn-secondary delete">Annulla</button>
+                <button class="btn btn-secondary confirm" style="color: rgb(169, 47, 75); background-color: rgb(183, 183, 183);">Genera</button>
+                <button class="btn btn-secondary delete" style="color: rgb(169, 47, 75); background-color: rgb(183, 183, 183);">Annulla</button>
             </div>
         </div>
         <h1 class="text-white text-uppercase">il tuo biglietto</h1>
-        <div class="container white-bg"></div>
+        <div class="container white-bg">
+            <div class="">
+                <h2 class="text-uppercase">dettagli passeggero</h2>
+                <div class="row row-cols-5 container ticket_box">
+                    <div class="box_ticket">
+                        <div class="col grey-section">
+                            <h2 class="text-uppercase">Nome passeggero</h2>
+                            <div><span id="name"></span></div>
+                        </div>
+
+                        <div class="col">
+                            <h3>Offerta</h3>
+                            <div><span>placeholder</span></div>
+                        </div>
+
+                        <div class="col">
+                            <h3>Carrozza</h3>
+                            <div><span>placeholder</span></div>
+                        </div>
+
+                        <div class="col">
+                            <h3>Codice CP</h3>
+                            <div><span>placeholder</span></div>
+                        </div>
+
+                        <div class="col">
+                            <h3>Costo Biglietto</h3>
+                            <div><span id="costo"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </main>
     
 </body>

@@ -17,6 +17,7 @@ const eleName = document.querySelector('#name');
 const eleKm = document.querySelector('#distance');
 const eleConfirm = document.querySelector('.confirm');
 const eleDelete = document.querySelector('.delete');
+const eleCosto = document.querySelector('#costo')
 
 eleConfirm.addEventListener('click', function () {
     const km = parseFloat(eleKm.value);
@@ -26,17 +27,17 @@ eleConfirm.addEventListener('click', function () {
 
     if (age == 'minorenne') {
         sconto = 20;
-        console.log('lo sconto è:', sconto)
+        console.log('lo sconto è:', '€', sconto)
     } else if (age == 'over') {
         sconto = 40;
-        console.log('lo sconto è:', sconto)
-    }
+        console.log('lo sconto è:', '€', sconto)
+    } 
 
-    if (eleName.value == '' || eleKm.value == '' || eleAge.value == 'none') {
+    if (eleName.value === '' || eleKm.value === '' || eleAge.value === 'none') {
         eleBoxTicket.innerHTML = ('inserisci dati');
         } else {
-            let totalPrice = basePrice * sconto / 100;
+            let totalPrice = basePrice - basePrice * sconto / 100;
             totalPrice = parseFloat(totalPrice.toFixed(2));
-            console.log('il prezzo del biglietto è:', totalPrice);
+            eleCosto.innerHTML = ('il prezzo del biglietto è:', '€', totalPrice);
     } 
 });
