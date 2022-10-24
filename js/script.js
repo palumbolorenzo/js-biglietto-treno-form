@@ -1,16 +1,4 @@
-/*const distance = prompt('Quanti km vuoi percorrere?');
-const age = parseInt(prompt('Qual è la tua età?'));
-const price = (distance * 0.21);
-console.log('il prezzo è:', price);
-if (age < 18) {
-    scontoUnder = (price * (20 / 100));
-    console.log('lo sconto è:', scontoUnder);
-}
-if (age > 65) {
-    scontoOver = (price * (40 / 100));
-    console.log('lo sconto è:', scontoOver);
-}
-*/
+
 
 const eleAge = document.querySelector('#age');
 const eleName = document.querySelector('#name');
@@ -18,6 +6,11 @@ const eleKm = document.querySelector('#distance');
 const eleConfirm = document.querySelector('.confirm');
 const eleDelete = document.querySelector('.delete');
 const eleCosto = document.querySelector('#costo')
+
+
+const inputName = document.getElementById('name');
+
+
 
 eleConfirm.addEventListener('click', function () {
     const km = parseFloat(eleKm.value);
@@ -39,5 +32,6 @@ eleConfirm.addEventListener('click', function () {
             let totalPrice = basePrice - basePrice * sconto / 100;
             totalPrice = parseFloat(totalPrice.toFixed(2));
             eleCosto.innerHTML = ('il prezzo del biglietto è:', '€', totalPrice);
+            outputName.innerHTML = inputName.value;
     } 
 });

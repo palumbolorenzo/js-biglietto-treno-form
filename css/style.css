@@ -8,9 +8,17 @@ html {
     font-family: sans-serif;
 } */
 
+html {
+    background-color: rgb(169, 47, 75);
+}
+
 main {
     background-color: rgb(169, 47, 75);
     padding: 2rem 0;
+}
+
+img {
+    width: 100%;
 }
 
 h1 {
@@ -19,6 +27,8 @@ h1 {
 
 .white-bg {
     background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    gap: 2rem;
 }
 
 .radius {
@@ -46,4 +56,8 @@ h1 {
 
 .grey-section {
     background-color: rgb(183, 183, 183);
+}
+
+h4 {
+    white-space: nowrap;
 }
