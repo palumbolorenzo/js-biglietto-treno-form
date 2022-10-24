@@ -14,7 +14,6 @@ html {
 
 main {
     background-color: rgb(169, 47, 75);
-    padding: 2rem 0;
 }
 
 img {
@@ -23,6 +22,7 @@ img {
 
 h1 {
     text-align: center;
+    padding: 2rem 0;
 }
 
 .white-bg {

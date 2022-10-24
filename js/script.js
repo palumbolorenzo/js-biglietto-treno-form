@@ -33,5 +33,6 @@ eleConfirm.addEventListener('click', function () {
             totalPrice = parseFloat(totalPrice.toFixed(2));
             eleCosto.innerHTML = ('il prezzo del biglietto è:', '€', totalPrice);
             outputName.innerHTML = inputName.value;
+            eleName.innerHTML = inputName.value;
     } 
 });
